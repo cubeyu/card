@@ -66,12 +66,24 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
-
     let selectedValue = this.innerText.toLowerCase();
+    if (selectedValue === "全部") selectedValue = "all";
+    else if (selectedValue === "网页设计") selectedValue = "网页设计";
+    else if (selectedValue === "应用程序") selectedValue = "应用程序";
+    else if (selectedValue === "网页应用") selectedValue = "网页应用";
+    
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
-
+    // 更新筛选按钮的激活状态
+    for (let btn of filterBtn) {
+      if (btn.innerText.toLowerCase() === this.innerText.toLowerCase()) {
+        lastClickedBtn.classList.remove("active");
+        btn.classList.add("active");
+        lastClickedBtn = btn;
+        break;
+      }
+    }
   });
 }
 
