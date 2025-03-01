@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集 - cubeyu's card</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="cubeyu">cubeyu</h1>
+          <p class="title">网页开发工程师</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>显示联系方式</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">邮箱</p>
+              <a href="mailto:zhaozfu@qq.com" class="contact-link">zhaozfu@qq.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">电话</p>
+              <a href="tel:+17336237911" class="contact-link">+86 17336237911</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">生日</p>
+              <time datetime="2004-04-18">2004年4月18日</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">地址</p>
+              <address>山西太原</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">关于我</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="resume.html" class="navbar-link">简历</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="portfolio.html" class="navbar-link active">作品集</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="http://aitec.cubtec.asia" class="navbar-link">博客</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="portfolio active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">作品集</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>全部</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>网页设计</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>应用程序</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>网页应用</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>选择分类</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>全部</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>网页设计</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>应用程序</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>网页应用</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="网页设计">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="个人网站" loading="lazy">
+                </figure>
+                <h3 class="project-title">个人网站</h3>
+                <p class="project-category">网页设计</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="网页应用">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="在线学习平台" loading="lazy">
+                </figure>
+                <h3 class="project-title">在线学习平台</h3>
+                <p class="project-category">网页应用</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="应用程序">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="任务管理应用" loading="lazy">
+                </figure>
+                <h3 class="project-title">任务管理应用</h3>
+                <p class="project-category">应用程序</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="应用程序">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="社交媒体应用" loading="lazy">
+                </figure>
+                <h3 class="project-title">社交媒体应用</h3>
+                <p class="project-category">应用程序</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="网页设计">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="电商网站" loading="lazy">
+                </figure>
+                <h3 class="project-title">电商网站</h3>
+                <p class="project-category">网页设计</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="网页应用">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="在线音乐播放器" loading="lazy">
+                </figure>
+                <h3 class="project-title">在线音乐播放器</h3>
+                <p class="project-category">网页应用</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="网页设计">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="企业官网" loading="lazy">
+                </figure>
+                <h3 class="project-title">企业官网</h3>
+                <p class="project-category">网页设计</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="网页应用">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="在线聊天应用" loading="lazy">
+                </figure>
+                <h3 class="project-title">在线聊天应用</h3>
+                <p class="project-category">网页应用</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="网页设计">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="博客系统" loading="lazy">
+                </figure>
+                <h3 class="project-title">博客系统</h3>
+                <p class="project-category">网页设计</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
